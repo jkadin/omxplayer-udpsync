@@ -566,7 +566,7 @@ int OMXPlayerSync::setUpConnection ()
 //      memcpy(&server, serverinfo->ai_addr, sizeof(struct sockaddr_in));
       server.sin_family = AF_INET;
       server.sin_port = htons( port );
-      freeaddrinfo(serverinfo);
+      //freeaddrinfo(serverinfo);
       
       return 0;
    }
